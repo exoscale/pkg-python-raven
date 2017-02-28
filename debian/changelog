@@ -1,3 +1,11 @@
+python-raven (6.0.0-1~precise0+exo1) precise; urgency=medium
+
+  * Backport for Precise.
+    + Remove tests.
+    + Remove Python 3 package.
+
+ -- Vincent Bernat <bernat@debian.org>  Tue, 28 Feb 2017 13:10:33 +0100
+
 python-raven (6.0.0-1) unstable; urgency=low
 
   * Initial release (closes: #791550)
