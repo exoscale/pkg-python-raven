@@ -1,3 +1,9 @@
+python-raven (6.0.0-2) xenial; urgency=medium
+
+  * Backport for Xenial. No changes.
+
+ -- Vincent Bernat <bernat@debian.org>  Tue, 28 Feb 2017 13:34:22 +0100
+
 python-raven (6.0.0-1) unstable; urgency=low
 
   * Initial release (closes: #791550)
