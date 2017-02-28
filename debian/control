@@ -1,0 +1,65 @@
+Source: python-raven
+Section: python
+Priority: optional
+Maintainer: Vincent Bernat <bernat@debian.org>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), dh-python,
+               python-all,
+               python-setuptools,
+               python3-all,
+               python3-setuptools,
+               python-contextlib2,
+               python-flask, python3-flask,
+               python-blinker, python3-blinker,
+# For tests:
+               python3-flask-login,
+               python-paste, python3-paste,
+               python-webpy,
+               python-unittest2,
+               python-bottle, python3-bottle,
+               python-celery, python3-celery,
+               python-exam, python3-exam,
+               python-flake8, python3-flake8,
+               python-logbook, python3-logbook,
+               python-mock, python3-mock,
+               python-nose, python3-nose,
+               python-pycodestyle, python3-pycodestyle,
+               python-tz, python3-tz,
+               python-pytest, python3-pytest,
+               python-pytest-timeout, python3-pytest-timeout,
+               python-requests, python3-requests,
+               python-tornado, python3-tornado,
+               python-webob, python3-webob,
+               python-webtest, python3-webtest,
+               python-anyjson, python3-anyjson,
+               python-gevent, python3-gevent
+Standards-Version: 3.9.8
+Homepage: https://github.com/getsentry/raven-python
+Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/raven.git
+Vcs-Browser: https://anonscm.debian.org/git/python-modules/packages/raven.git
+
+Package: python-raven
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends},
+Recommends: ${python:Recommends}
+Suggests: ${python:Suggests}
+Description: client for Sentry - Python 2.X
+ Raven is a Python client for Sentry. It provides full out-of-the-box
+ support for many of the popular frameworks, including Django, and
+ Flask. Raven also includes drop-in support for any WSGI-compatible web
+ application.
+ .
+ This package contains the module for Python 2.
+
+Package: python3-raven
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends},
+Recommends: ${python3:Recommends}
+Suggests: ${python3:Suggests}
+Description: client for Sentry - Python 3.X
+ Raven is a Python client for Sentry. It provides full out-of-the-box
+ support for many of the popular frameworks, including Django, and
+ Flask. Raven also includes drop-in support for any WSGI-compatible web
+ application.
+ .
+ This package contains the module for Python 3.

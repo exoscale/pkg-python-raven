@@ -1,0 +1,25 @@
+From 54dc57ef750a08f2c804f3c9393bef88db16e5c1 Mon Sep 17 00:00:00 2001
+From: Vincent Bernat <vincent@bernat.im>
+Date: Tue, 28 Feb 2017 11:32:14 +0100
+Subject: tests: import reload for Python 3
+
+---
+ tests/transport/gevent/tests.py | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/tests/transport/gevent/tests.py b/tests/transport/gevent/tests.py
+index 22c3e9000661..ad667c18d449 100644
+--- a/tests/transport/gevent/tests.py
++++ b/tests/transport/gevent/tests.py
+@@ -9,6 +9,11 @@ from raven.utils.testutils import TestCase
+ from raven.base import Client
+ from raven.transport.gevent import GeventedHTTPTransport
+ 
++try:
++    from importlib import reload
++except ImportError:
++    from imp import reload
++
+ 
+ class GeventTransportTest(TestCase):
+     def setUp(self):

@@ -1,0 +1,5 @@
+python-raven (6.0.0-1) unstable; urgency=low
+
+  * Initial release (closes: #791550)
+
+ -- Vincent Bernat <bernat@debian.org>  Tue, 28 Feb 2017 09:48:32 +0100

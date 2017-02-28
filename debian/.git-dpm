@@ -1,0 +1,11 @@
+# see git-dpm(1) from git-dpm package
+54dc57ef750a08f2c804f3c9393bef88db16e5c1
+54dc57ef750a08f2c804f3c9393bef88db16e5c1
+fe509920c25ec8033dd060de3e9c8ba1e493dde4
+fe509920c25ec8033dd060de3e9c8ba1e493dde4
+python-raven_6.0.0.orig.tar.xz
+f8439bbc21ddf19d1dc789ad5c5e26cd1f5d5474
+238840
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"
