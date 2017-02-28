@@ -3,13 +3,7 @@
 export PYBUILD_NAME=raven
 export PYBUILD_AFTER_INSTALL_python2=rm -rf {destdir}/usr/bin/
 
-# Django tests need a missing conftest.py. Tornado contrib tests seems
-# to need network. Versioning tests need an installed version of the
-# package to run. Flask tests cannot be run with Python 2.x as we are
-# missing flask.ext.login. Web.py doesn't exist in Python 3.
-export PYBUILD_TEST_ARGS=--ignore=tests/contrib/django --ignore=tests/contrib/tornado --ignore=tests/versioning/tests.py
-export PYBUILD_TEST_ARGS_python2=--ignore=tests/contrib/flask $(PYBUILD_TEST_ARGS)
-export PYBUILD_TEST_ARGS_python3=--ignore=tests/contrib/webpy $(PYBUILD_TEST_ARGS)
-
 %:
 	dh $@ --with python3,python2 --buildsystem=pybuild
+
+override_dh_auto_test:
